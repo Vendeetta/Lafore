@@ -1,5 +1,4 @@
-import javax.swing.plaf.IconUIResource;
-import java.util.Arrays;
+package chap02;
 
 public class OrdArray {
 

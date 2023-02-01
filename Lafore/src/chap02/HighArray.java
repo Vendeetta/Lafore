@@ -1,7 +1,9 @@
+package chap02;
+
 public class HighArray {
     // highArray.java
 // Класс массива с высокоуровневым интерфейсом
-// Запуск программы: C>java HighArrayApp
+// Запуск программы: C>java chap02.HighArrayApp
 ////////////////////////////////////////////////////////////////
         private long[] a;
         // Ссылка на массив a
@@ -88,7 +90,7 @@ public class HighArray {
             return max;
         }
 //-----------------------------------------------------------
-    } // Конец класса HighArray
+    } // Конец класса chap02.HighArray
     class HighArrayApp
     {
        
@@ -128,5 +130,5 @@ public class HighArray {
             arr.display();
             arr1.display();
         }
-    } // Конец класса HighArrayApp
+    } // Конец класса chap02.HighArrayApp
 ////////////////////////////////////////////////////////////////

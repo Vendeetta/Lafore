@@ -1,4 +1,4 @@
-package Chap3Sort;
+package chap3Sort;
 
 import java.util.Arrays;
 
