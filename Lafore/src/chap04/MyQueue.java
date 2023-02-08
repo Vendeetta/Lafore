@@ -1,6 +1,7 @@
 package chap04;
 
 import java.util.Arrays;
+import java.util.Queue;
 
 public class MyQueue {
     private int maxSize;
