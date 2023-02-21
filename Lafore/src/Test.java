@@ -1,12 +1,13 @@
 public class Test implements Runnable{
         String x, y;
+        static int count = 1;
     @Override
     public void run() {
         for (int i = 0; i < 10; i++)
             synchronized (this){
                 x = "Hello";
                 y = "Java";
-                System.out.print(x + " " + y + " ");
+                System.out.print(x + " " + y + " " + count++ +"\n");
             }
         }
 
