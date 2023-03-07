@@ -13,7 +13,7 @@ public class SortedLinkList {
     }
 
     public void insert(int id, double dd) {
-        Link newLink = new Link(id, dd);
+        Link newLink = new Link(id);
         Link current = first;
         Link previus = null;
         while (current != null && id > current.iData) {

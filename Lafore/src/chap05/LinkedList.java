@@ -4,10 +4,10 @@ public class LinkedList {
 
     public static void main(String[] args) {
         LinkList theList = new LinkList();
-        theList.insertFirst(22, 2.99);
-        theList.insertFirst(44, 4.99);
-        theList.insertFirst(66, 6.99);
-        theList.insertFirst(88, 8.99);
+        theList.insertFirst(22);
+        theList.insertFirst(44);
+        theList.insertFirst(66);
+        theList.insertFirst(88);
         theList.displayList();
         // Вывод содержимого списка
 //        while (!theList.isEmpty())
@@ -30,17 +30,16 @@ class Link {
     // Данные (ключ)
     public int iData;
     // Данные
-    public double dData;
     // Следующий элемент в списке
     public Link next;
+    public Link previous;
 
-    public Link(int id, double dd) {
+    public Link(int id) {
         iData = id;
-        dData = dd;
     }
 
     public void displayLink() {
-        System.out.print("{" + iData + ", " + dData + "} ");
+        System.out.print("{" + iData + "} ");
     }
 }
 
@@ -56,8 +55,8 @@ class LinkList {
         return (first == null);
     }
 
-    public void insertFirst(int id, double dd) {
-        Link newLink = new Link(id, dd);
+    public void insertFirst(int id) {
+        Link newLink = new Link(id);
         newLink.next = first;
         first = newLink;
     }
